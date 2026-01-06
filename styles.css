@@ -1,0 +1,129 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #3f5266;
+  margin: 0;
+  padding: 15px;
+  /* <!--Plano de fundo--> */
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 232, 28);
+  margin-bottom: 20px;
+  /* <!--cabeçalho--> */
+}
+
+.card {
+  background: #cdcedfc0;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 650px;
+  margin: auto;
+  box-shadow: 0 3px 8px rgba(95, 7, 7, 0.1);
+  /* <!--corpo cartão--> */
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select,
+button {
+  width: 97%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #977c7c;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #154e8a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  /* <!--cor do botão adicionar--> */
+}
+
+button:hover {
+  background-color: #bdc8d4;
+}
+
+.btn-small {
+  padding: 4px 8px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(255, 249, 249);
+  cursor: pointer;
+}
+
+.btn-remove {
+  background: #dc3545;
+}
+
+.btn-check {
+  background: #049e28;
+}
+
+.categoria {
+  background: #eef7ff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.categoria h3 {
+  margin: 0 0 10px 0;
+  color: #0252a8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #55b17e73;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.comprado {
+  text-decoration: line-through;
+  color: #e70d0d;
+  background: lab(60.21% 17.23 6.73);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.search-box {
+  margin-top: 15px;
+}
+
+.share-btn {
+  background-color: #29af5a;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  background-color: #52b87b;
+}

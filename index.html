@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🛒MAGSIL</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/3081/3081648.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#007bff" />
+  </head>
+
+    <h1>🛍️ Lista MAGSIL</h1>
+
+    <div class="card">
+      <label for="categoria">Categoria:</label>
+      <select id="categoria">
+        <option value="">Selecione...</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Verduras">Verduras</option>
+        <option value="Bebidas">Bebidas</option>
+        <option value="Limpeza">Limpeza</option>
+        <option value="Outros">Outros</option>
+      </select>
+
+      <label for="item">Item:</label>
+      <input type="text" id="item" placeholder="Digitar ITEM" />
+
+      <button onclick="adicionarItem()">Adicionar</button>
+
+      <div class="search-box">
+        <label for="pesquisa">Pesquisar item:</label>
+        <input
+          type="text"
+          id="pesquisa"
+          placeholder="Digite para filtrar..."
+          oninput="filtrarLista()"
+        />
+      </div>
+
+      <div id="lista"></div>
+
+      <button class="share-btn" onclick="compartilharLista()">
+        📤 Compartilhar no WhatsApp
+      </button>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
